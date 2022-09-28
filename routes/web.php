@@ -32,6 +32,14 @@ Route::get('/dashboard', function () {
 
 
 Route::get('/red-square', [S::class, 'redSquare']);
+Route::post('/add-square', [S::class, 'addSquare']);
+Route::get('/get-square', [S::class, 'getSquare']);
+Route::delete('/reset-square', [S::class, 'resetSquare']);
+
+
+
+
+
 Route::get('/red-square-blade', [S::class, 'redSquareBlade']);
 
 

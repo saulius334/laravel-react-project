@@ -1,5 +1,58 @@
-.square {
-    width: 200px;
-    height: 200px;
-    
+.square-bin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    .square {
+        margin: 10px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        letter-spacing: 4px;
+        animation: spin infinite 10s linear;
+    }
+}
+.input-bin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    gap:10px;
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: crimson;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+    }
+    [type=text] {
+        font-size: 25px;
+        padding: 15px;
+        border: 1px solid pink;
+        outline: none;
+        box-shadow: none;
+    }
+    [type=color] {
+        height: 76px;
+        width: 100px;
+        border: none;
+        background-color: transparent;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
